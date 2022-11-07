@@ -1,0 +1,100 @@
+@import '../css/Global.scss';
+
+.header {
+
+    .icon{
+        margin: 0 15px;
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+.sidebar{
+    position: fixed;
+    width: 35vh;
+    height: 100vh;
+    color: #000;
+    padding: 15px 0;
+    background-color: #ececec;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+    .close-icon{
+        padding: 0 15px;
+        text-align: right;
+
+        .icon{
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+    }
+
+    .img-logo{ 
+        margin: 15px 0;
+        text-align: center;
+
+        img{
+            width: 50%;
+            cursor: pointer;
+        }
+
+    }
+
+    .search{
+        margin: 15px 0;
+        padding: 5px 20px;
+
+        input {
+            color: #fff;
+            padding: 5px 20px;
+            background-color: rgb(120, 15, 218);
+
+            &::placeholder{
+                color: #fff;
+            }
+
+        }
+
+    }
+
+    ul{
+        padding: 0;
+
+        a{
+            color: #000 !important;
+        }
+
+        li{
+            width: 100%;
+            padding: 15px 20px;
+            margin: 5px 0;
+            font-weight: 100;
+
+            &:hover{
+                color: #fff;
+                background-color: rgb(120, 15, 218);
+            }
+
+            .icon{
+                position: relative;
+                bottom: 2px;
+                font-size: 1.4em;
+                margin: 0 10px;
+            }
+
+        }
+
+    }
+
+}
+
+.close{
+    left: -270px !important;
+}
+
+.open{
+    left: 0 !important;
+}
